@@ -1,10 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<html lang="fr-FR">
-  <head>
-    
-  </head>
-  <body>
-    <p>Ceci est un test cool</p>
-  </body>
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>À Propos de Moi</h2>
+    <p>Je suis un développeur passionné avec un intérêt particulier pour la Data Science, l'intelligence artificielle et la cybersécurité. J'aime résoudre des problèmes complexes et créer des applications web innovantes.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Compétences Techniques</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>JavaScript (React, Next.js)</li>
+      <li>Django</li>
+      <li>PostgreSQL</li>
+      <li>Docker</li>
+      <li>Linux (Administration système)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projets</h2>
+    <div class="project">
+      <h3>Forum ESIOverflow</h3>
+      <p>Un forum inspiré de StackOverflow, conçu pour les étudiants de l'ESI pour partager leurs questions et solutions.</p>
+      <a href="https://github.com/monGit/ESIOverflow" target="_blank">Voir le projet</a>
+    </div>
+    <div class="project">
+      <h3>Moodle sur Raspberry Pi</h3>
+      <p>Déploiement de la plateforme Moodle sur un Raspberry Pi pour des formations en ligne accessibles.</p>
+      <a href="https://github.com/monGit/MoodleRaspberryPi" target="_blank">Voir le projet</a>
+    </div>
+    <!-- Ajouter plus de projets ici -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
